@@ -1,0 +1,27 @@
+@include media-breakpoint-up(md){
+  .nav-main-wrapper{
+    backgroundf:red;
+  }
+  .nav-main-wrapper .nav-main {
+     line-height: 90px;
+     height: 90px;
+   }
+   .nav-main-wrapper .nav-main .nav-main-items li {
+     line-height: 90px;
+     height: 90px;
+   }
+   .nav-main-wrapper .nav-main .nav-main-logo {
+     line-height: 90px;
+     height: 90px;
+   }
+   .nav-main-wrapper .nav-main .nav-main-logo img {
+     float: none;
+     display: inline-block;
+   }
+   .nav-main-wrapper .nav-main .nav-main-logo .nav-main-logo-symbol {
+     height: 60px;
+   }
+   .nav-main-wrapper .nav-main .nav-main-logo .nav-main-text {
+     width: 240px;
+   }
+}
