@@ -1,0 +1,27 @@
+{
+  "name": "sjrollett",
+  "main": "server.js",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "npm run clean && npm run build-sass && node ./scripts/build",
+    "serve": "serve ./public -p 6000",
+    "build-sass": "sass --style=compressed --no-charset src/scss/styles.scss src/assets/css/styles.css",
+    "clean": "rimraf public"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "cpx": "^1.5.0",
+    "directory-tree": "^2.2.3",
+    "file-system": "^2.2.2",
+    "fs-extra": "^8.1.0",
+    "path": "^0.12.7",
+    "rimraf": "^3.0.0",
+    "sass": "^1.22.9",
+    "serve": "11.1.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "node 8"
+  }
+}

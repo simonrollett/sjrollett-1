@@ -1,0 +1,51 @@
+body{
+    background-color: #000;
+    /* background-image: url('../images/brand/me-4c.jpg'); */
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 60%;
+}
+.nav-main-wrapper{
+    background: #fff;
+}
+
+.nav-main-items li a{
+    color: #000;
+}
+
+.nav-main-wrapper{
+    border-bottom: none;
+}
+
+.nav-main-wrapper .nav-main{
+    border-left-color: #eee; 
+}
+
+.nav-main-wrapper .nav-main .nav-main-items li{
+    border-right: none;
+}
+
+.bg-for-face{
+    background-color: #eee;
+    /* background-image: url('../images/brand/me-4d.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    padding-top: 70%; */
+}
+
+.nav-main-items li a,
+.nav-main-items li a:hover{
+    color:#fff;
+}
+
+@media (min-width: 768px){
+    .nav-main-items li a,
+    .nav-main-items li a:hover{
+        color:#000;
+    }
+
+    .nav-main-wrapper .nav-main .nav-main-items{
+        float:right;
+    }
+}
