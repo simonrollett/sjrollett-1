@@ -6,8 +6,19 @@
 
 $width-modal-nav: 320px;
 
+.modal.fade .modal-dialog{
+-webkit-transform: translate(0, -25%);
+-ms-transform: translate(0, -25%);
+-o-transform: translate(0, -25%);
+transform: translate(0, -25%);
+-webkit-transition: -webkit-transform 0.3s ease-out;
+-moz-transition: -moz-transform 0.3s ease-out;
+-o-transition: -o-transform 0.3s ease-out;
+transition: transform 0.3s ease-out;
+}
+
 .modal.modal-side .modal-dialog {
-  // right: -$width-modal-nav;
+  right: -$width-modal-nav;
   position: fixed;
   margin: auto;
   width: $width-modal-nav;
@@ -16,6 +27,8 @@ $width-modal-nav: 320px;
   -ms-transform: translate3d(0%, 0, 0);
   -o-transform: translate3d(0%, 0, 0);
   transform: translate3d(0%, 0, 0);
+
+
 }
 .modal.modal-side .modal-dialog .modal-header {
   border-radius: 0;
@@ -44,15 +57,13 @@ $width-modal-nav: 320px;
 }
 /*Right*/
 .modal.modal-side.fade .modal-dialog {
-  right: 0;
-  // right: -$width-modal-nav;
   -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
   -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
   -o-transition: opacity 0.3s linear, right 0.3s ease-out;
   transition: opacity 0.3s linear, right 0.3s ease-out;
 }
-.modal.modal-side.fade.in .modal-dialog {
-  //right: 0;
+.modal.modal-side.fade.show .modal-dialog {
+  right: 0;
 }
 @include media-breakpoint-up(xl){
   .modal.modal-side .modal-dialog {
