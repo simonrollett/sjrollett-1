@@ -1,6 +1,7 @@
 const fs = require("file-system");
 const fse = require("fs-extra");
 const dirTree = require("directory-tree");
+const bootstrapRoot = './node_modules/bootstrap/js/src';
 
 // SETTINGS
 const srcPath = './src';
@@ -20,4 +21,5 @@ pageDefinitionsDir.children.forEach(fileName => {
 });
 
 // SETUP LOCALHOST DASHBOARD RESOURCES
+//fse.copy(`${bootstrapRoot}`, `${srcPath}/assets/js`);
 fse.copy(`${srcPath}/assets`, `${distPath}/assets`);

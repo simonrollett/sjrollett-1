@@ -4,7 +4,7 @@ function navbar(data){return `
   <nav class="nav-main-wrapper">
     <div class="container nav-main">
       <a class="nav-main-logo" href="/">
-          <img src="images/brand/sjrollett-2.svg" alt="Simon Rollett logo" class="nav-main-logo-symbol">
+          <img src="./assets/images/brand/sjrollett-2.svg" alt="Simon Rollett logo" class="nav-main-logo-symbol">
       </a>
       <ul class="nav-main-items hidden-xs" role="navigation">
           <li class=""><a href="/download-cv/">CV</a></li>

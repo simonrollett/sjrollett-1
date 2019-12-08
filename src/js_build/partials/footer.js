@@ -1,4 +1,5 @@
 const vars = require("../vars.js");
+const modal = require("./modal.js");
 
 function footer(data){return `
   <footer class="footer container pad-t" role="contentinfo">
@@ -13,6 +14,7 @@ function footer(data){return `
           </div>
       </div>
   </footer>
+  ${modal(data)}
     `};
 
 module.exports = footer;

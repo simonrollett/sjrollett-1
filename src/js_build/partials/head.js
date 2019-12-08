@@ -26,8 +26,8 @@ function head(data){return `
     <meta name="twitter:card" content="">
     <meta name="twitter:title" content="${data.head.title}">
 
-    <link rel="icon" href="/assets/images/brand/favicon.ico">
-    <link rel="stylesheet" href="/assets/css/styles.css?1">
+    <link rel="icon" href="./assets/images/brand/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/styles.css?1">
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 
     <script>
