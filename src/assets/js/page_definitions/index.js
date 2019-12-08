@@ -14,7 +14,8 @@ const page_content = {
         },
         head:[],
         body:[
-            "A new email address <strong>{{CUSTOMER_EMAIL_PREVIOUS}}</strong> has been added to your account on {{CUSTOMER_EMAIL_CHANGE_DATE_TIME}}."
+          "line 1",
+          "A new email address <strong>{{CUSTOMER_EMAIL_PREVIOUS}}</strong> has been added to your account on {{CUSTOMER_EMAIL_CHANGE_DATE_TIME}}."
         ],
         footer:[
 

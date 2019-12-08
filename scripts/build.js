@@ -14,11 +14,11 @@ const pageDefinitionsDir = dirTree("./src/assets/js/page_definitions");
 
 // BUILD PAGES
 pageDefinitionsDir.children.forEach(fileName => {
-  console.log({fileName})
+  //console.log({fileName})
       const emailContent = require(`../${fileName.path}`);
       const emailTemplate = require(`${srcTemplatesDir}/${emailContent.config.html_template}`);
       const outputName = fileName.name.replace(".js",".html");
-      console.log(`Build ${outputName} into ${publicTemplatesDir}`);
+      //console.log(`Build ${outputName} into ${publicTemplatesDir}`);
       fs.writeFile(`${publicTemplatesDir}/${outputName}`, emailTemplate(emailContent), function(err) {});
 });
 
