@@ -5,11 +5,11 @@ const dirTree = require("directory-tree");
 // SETTINGS
 const srcPath = './src';
 const distPath = './public';
-const srcTemplatesDir = '../src/js/page_templates';
+const srcTemplatesDir = '../src/js_build/page_templates';
 const publicTemplatesDir = `${distPath}/`;
 
 // RETURN STRUCTURE OF CONTENT INDEX FILES AS OBJECT
-const pageDefinitionsDir = dirTree("./src/js/page_definitions");
+const pageDefinitionsDir = dirTree("./src/js_build/page_definitions");
 
 // BUILD PAGES
 pageDefinitionsDir.children.forEach(fileName => {
