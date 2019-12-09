@@ -1,6 +1,6 @@
-# MadJester website
+# Portfolio website
 
-Online clothing store
+Ah, the wonders to follow...
 
 ## Installation
 
