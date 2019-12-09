@@ -15,6 +15,6 @@ function footer(data){return `
       </div>
   </footer>
   ${modal(data)}
-    `};
+  `};
 
 module.exports = footer;

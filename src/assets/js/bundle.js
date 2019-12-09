@@ -25,14 +25,14 @@ function do_modal($incoming_array) {
 
 $(document).ready(function ($) {
   $(".j-main-menu").click(function(e) {
-        var menu_body = "<ul class='nav-main-items'>" + $(".nav-main-items").html() + "</ul>";
+        var menu_body = "linkws from nav here";
         $(id_modal).addClass(modal_side_class),
         $(id_modal).addClass(modal_nav_class),
         $modal_data = {
             title: "Browse",
             body: menu_body
         },
-        do_modal(id_modal, $modal_data)
+        do_modal($modal_data)
     })
     $(id_modal).bind("hidden.bs.modal", function(e) {
         $(id_modal).attr("class", "modal fade"),

@@ -1,7 +1,55 @@
-@include media-breakpoint-up(md){
-  .nav-main-wrapper{
-    backgroundf:red;
+$nav-bg: #fff;
+$gutter: $grid-gutter-width/2;
+
+@include media-breakpoint-up(xs) {  }
+@include media-breakpoint-up(sm) {  }
+@include media-breakpoint-up(md) {  }
+@include media-breakpoint-up(lg) {  }
+@include media-breakpoint-up(xl) {  }
+
+.nav-main-wrapper{
+  background: $nav-bg;
+
+  .col{
+    height:50px;
+    line-height:50px;
   }
+
+  .nav-links{
+    justify-content: flex-end;
+  }
+
+  .nav-link{
+    padding:0 $gutter;
+  }
+
+  .nav-logo-wrapper{
+    .nav-logo{
+      width:80px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@include media-breakpoint-up(sm){
+  .nav-main-wrapper{
+
+    .col{
+      height:70px;
+      line-height:70px;
+    }
+
+    .nav-logo-wrapper{
+      .nav-logo{
+        width:150px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md){
+
   .nav-main-wrapper .nav-main {
      line-height: 90px;
      height: 90px;

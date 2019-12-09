@@ -12,15 +12,11 @@ function modal(data){return `
           </button>
         </div>
         <div id="modal-body-general" class="modal-body">
-            <div class="justify-content-center">
-
-                    ${data.body}
-                
-            </div>
+            <div class="justify-content-center"></div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-lg btn-light" data-dismiss="modal">Cancel</button>
-          <button type="button" class="btn float-right" id="ja-modal-action-btn"></button>
+          <button id="btm-modal-secondary" type="button" class="btn btn-lg btn-light d-none" data-dismiss="modal">Cancel</button>
+          <button id="btm-modal-primary" type="button" class="btn float-right d-none"></button>
         </div>
       </div>
     </div>
